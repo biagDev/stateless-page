@@ -1,38 +1,59 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
 .App {
+  font-family: Poppins;
   text-align: center;
+  text-transform: uppercase;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 25px;
+}
+nav > p {
+  padding: 0 10px;
+  font-size: 13px;
+}
+.hero-section {
+  width: 100%;
   color: white;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets.codepen.io/6060109/agency-hero-image.png);
+  background-size: cover;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.hero-section > h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.services-section {
+  height: 300px;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+.services-section > h2 {
+  color: #153488;
+}
+.services-container {
+  justify-content: center;
+  width: 100%;
+}
+.service-block {
+  width: 25%;
+  margin: 0;
+}
+.service-block img {
+  width: 100%;
+}
+.service-block p {
+  text-align: left;
+  font-weight: bold;
+  color: #806c6c;
+  font-size: 12px;
 }
