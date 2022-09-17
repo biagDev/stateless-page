@@ -59,3 +59,54 @@ nav > p {
   color: #806c6c;
   font-size: 12px;
 }
+.footer-container {
+  background-color: #153588;
+  color: white;
+  height: 300px;
+  margin-top: 125px;
+  padding: 50px 100px;
+}
+.footer-container h2 {
+  font-size: 32px;
+  line-height: 45px;
+}
+.footer-container input[type='text'] {
+  background: none;
+  width: 75%;
+  border: none;
+  border-bottom: white 0.5px solid;
+  color: white;
+  padding-bottom: 10px;
+}
+.footer-container input[type='text']::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.footer-container button {
+  display: block;
+  border: none;
+  padding: 5px 10px;
+  background-color: white;
+  margin: 20px auto;
+  color: #735e5d;
+}
+
+@media only screen and (max-width: 600px) {
+  .services-section {
+    height: auto;
+  }
+  .service-container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .service-block {
+    width: 70%;
+  }
+  .footer-container {
+    padding: 50px 10px;
+  }
+  .footer-container > h2 {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
