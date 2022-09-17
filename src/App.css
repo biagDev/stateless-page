@@ -34,21 +34,23 @@ nav > p {
 }
 .services-section {
   height: 300px;
-  padding: 50px 0;
+  margin: 50px 0;
   box-sizing: border-box;
 }
 .services-section > h2 {
   color: #153488;
 }
-.services-container {
+.service-container {
+  display: flex;
   justify-content: center;
-  width: 100%;
+  margin: 0 auto;
+  width: 70%;
 }
 .service-block {
-  width: 25%;
-  margin: 0;
+  width: 30%;
+  margin: 0 20px;
 }
-.service-block img {
+.service-block > img {
   width: 100%;
 }
 .service-block p {
